@@ -17,7 +17,7 @@ class mahasiswa{
             nim = pnim;
         };
 
-        static int gettNim() {
+        static int getNim() {
             return nim;
         }
 
@@ -37,4 +37,14 @@ void mahasiswa::printAll(){
     cout << "ID : " << id << endl;
     cout << "Nama : " << nama << endl;
     cout << endl;
+}
+
+int main() {
+    mahasiswa mhs1("Sri Dadi");
+    mahasiswa mhs2("Budi Jatmiko");
+    
+    mahasiswa::setNim(9);
+    mahasiswa mhs3("Andi Janu");
+    mahasiswa mhs4("Joko Wohono");
+
 }
